@@ -76,9 +76,9 @@ body{
 }
 
 .hours{
-    height: 160px;
+    height: 120px;
     width: 12px;
-    top: 100px;    
+    top: 140px;    
     background-color: red;
     border-radius: 70%;
     /* box-shadow: 10px 5px 2px rgb(190, 147, 147); */
@@ -101,11 +101,11 @@ body{
 }
 
 .seconds{
-    height: 170px;
+    height: 180px;
     z-index: 14;
     width: 8px;
     background-color:silver;
-    top: 90px;
+    top:80px;
     left: 245px;
     
 
