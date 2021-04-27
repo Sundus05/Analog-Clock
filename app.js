@@ -62,7 +62,7 @@ function ticking(){
     
 
 
-    document.querySelector('.digital-container').innerHTML = h +':'+minutes+':'+seconds+ ":"+mseconds;    
+    document.querySelector('.digital-container').innerHTML = hours +':'+minutes+':'+seconds+ ":"+mseconds;    
     
 
 }

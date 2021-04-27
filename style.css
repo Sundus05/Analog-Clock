@@ -1,3 +1,4 @@
+
 body{
     background-image: url('BG.jpg');
     background-size: cover;
@@ -5,6 +6,10 @@ body{
     height: 1000px; 
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 
 }
 
@@ -15,12 +20,30 @@ body{
     width: 700px;
     padding: 20px;
     align-items: center;
+    animation: 0.5s slide-up;
+    margin-top:0%;
+    
+
 }
 
+@keyframes slide-up {
+    from {
+      margin-top: 100%;
+      height: 300%; 
+    }
+  
+    to {
+      margin-top: 0%;
+      height: 100%;
+    }
+  }
+
+
 .clock{
-    position: absolute;
-    height: 650px;
-    width: 650px;
+    
+    position: relative;
+    height: 500px;
+    width: 500px;
     border-radius: 50%;
     top: 30px;
     overflow: hidden; 
@@ -34,13 +57,13 @@ body{
 
 .needle{
     position: absolute;
-    height: 260px;
+    height: 200px;
     width: 12px;
     align-items: center;
     z-index: 10;
     background-color: black;
-    left: 320px;
-    top: 96px;
+    left: 243px;
+    top: 40px;
     border-radius: 40%;
     transform: rotate();
     transform-origin: bottom;
@@ -53,9 +76,9 @@ body{
 }
 
 .hours{
-    height: 180px;
-    width: 15px;
-    top: 155px;
+    height: 160px;
+    width: 12px;
+    top: 100px;    
     background-color: red;
     border-radius: 70%;
     /* box-shadow: 10px 5px 2px rgb(190, 147, 147); */
@@ -67,24 +90,30 @@ body{
 }
 
 .minutes{
-    top: 110px;
-    height: 220px;
-    width: 15px;
+    top: 70px;
+    height: 190px;
+    width: 10px;
     border-radius: 50%;
-    background-color:gray;
-    /* box-shadow: 10px 5px 2px rgb(204, 200, 200); */
+    background-color:black;
+    
 
 
 }
 
 .seconds{
+    height: 170px;
     z-index: 14;
-    width: 5px;
+    width: 8px;
     background-color:silver;
-    top: 75px;
+    top: 90px;
+    left: 245px;
     
 
 
+}
+
+.mseconds{
+    height: 180px;
 }
 
 .center-dot{
@@ -94,8 +123,8 @@ body{
     background-color: black;
     position: absolute;
     z-index: 20;
-    top: 315px;
-    left: 312px;
+    top: 238px;
+    left: 235px;
 }
 
 .digital-container{
@@ -105,7 +134,7 @@ body{
     height: 80px;
     width: 400px;
     /* left: 715px; */
-    top: 730px;
+    top: 600px;
     border-radius: 30px;
     /* padding-top: 2px; */
     color: black;
